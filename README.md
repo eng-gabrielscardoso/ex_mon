@@ -1,21 +1,32 @@
 # ExMon
 
-**TODO: Add description**
+Just a simple game developed with Elixir for learning purposes.
+
+> The project still under development and might be different from version to another.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_mon` to your list of dependencies in `mix.exs`:
+Clone the repository with the following command
 
-```elixir
-def deps do
-  [
-    {:ex_mon, "~> 0.1.0"}
-  ]
-end
+```shell
+git clone https://github.com/eng-gabrielscardoso/ex_mon.git
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ex_mon>.
+After it, you could run the following command to install the deps
+
+```shell
+mix deps.get
+```
+
+Finally, run the following command to run the interactive elixir REPL with the compiled modules
+
+```shell
+iex -S mix
+```
+
+> Dockerised version still under development
+
+## Licence
+
+This project is licensed under the MIT License. See [HERE](LICENSE)
 
