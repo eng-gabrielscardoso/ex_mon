@@ -9,10 +9,9 @@ defmodule ExMon do
   end
 
   def start_game(player) do
-    @enemies_names
-    |> Enum.shuffle
-    |> hd
-    |> create_player(:punch, :cure, :super_punch)
+    create_player(:punch, :cure, :super_punch, @enemies_names |> Enum.shuffle |> hd)
     |> Game.start(player)
+
+    Status.print_round_message()
   end
 end
