@@ -1,6 +1,6 @@
 defmodule ExMon do
-  alias ExMon.Game
-  alias ExMon.Player
+  alias ExMon.{Game, Player}
+  alias ExMon.Game.Status
 
   @enemies_names ["Robotinik", "Super-globalist", "Iphone Socialist", "Marx Lover"]
 
