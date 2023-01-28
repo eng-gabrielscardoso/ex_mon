@@ -1,6 +1,6 @@
 defmodule ExMon.Game.Actions do
   alias ExMon.Game
-  alias ExMon.Game.Actions.Attack
+  alias ExMon.Game.Actions.{Attack, Heal}
 
   def fetch_move(move) do
     Game.player()
@@ -21,7 +21,10 @@ defmodule ExMon.Game.Actions do
     end
   end
 
-  def heal(move) do
-    IO.puts(move)
+  def heal() do
+    case Game.turn() do
+      :player -> Heal.heal_hit_points(:player)
+      :computer -> Heal.heal_hit_points(:computer)
+    end
   end
 end
